@@ -3,7 +3,7 @@
 /**
 * main - Prints l'alphabet en minuscule puis majuscule
 *
-*
+* deux boucles qui se suivent 
 *
 *
 * Return: toujours 0.
