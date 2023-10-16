@@ -2,8 +2,8 @@
 /**
 * main- on veut print de 0 a 10
 *
-*
-*
+* boucle for pour itérer de 0 à 9 (inclus).
+* La variable number prend successivement les valeurs de 0 à 9.
 *
 *
 * Return: Toujours 0
