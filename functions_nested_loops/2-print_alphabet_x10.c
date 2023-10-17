@@ -9,7 +9,7 @@ void print_alphabet_x10(void)
 	char letter;
 	int compteur;
 
-	compteur =0;
+	compteur = 0;
 
 while (compteur++ <= 9)
 	{
