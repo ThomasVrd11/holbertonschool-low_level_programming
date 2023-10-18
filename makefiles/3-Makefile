@@ -16,3 +16,10 @@ oclean:
 fclean: clean oclean
 
 re: fclean all
+
+#La règle all est la cible par défaut, et elle construit l'exécutable school.
+#Le Makefile compile automatiquement seulement les fichiers source mis à jour en fichiers objets quand cela est nécessaire.
+#La règle clean est fournie pour nettoyer (supprimer) les fichiers temporaires et l'exécutable.
+#La règle oclean est utilisée pour supprimer les fichiers objets.
+#La règle fclean est utilisée pour supprimer tous les fichiers générés.
+#La règle re est fournie pour reconstruire complètement le projet, en commençant par fclean puis all.
