@@ -1,0 +1,18 @@
+# Compiler
+CC = gcc
+
+# Source files
+SRC = main.c school.c
+
+# Object files (generées automatiquement)
+OBJ = $(SRC:.c=.o)
+
+# Executable 
+NAME = school
+
+# target par defaut: build the executable
+all: $(NAME)
+
+# Link l'executable avec les object files
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
