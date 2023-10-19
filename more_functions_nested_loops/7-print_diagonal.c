@@ -1,25 +1,23 @@
 #include "main.h"
 
 /**
- * print_diagonal - alligne une diagonale.
- * @n: le nombre de \
+ * print_diagonal - print une diagonale.
+ * @n: le nombre de fois que la diagonale est print
+ *
  */
 void print_diagonal(int n)
 {
-	int ligne, espace;
+	int lon, lar;
 
-	if (n > 0)
+	for (lon = 0; lon < n; lon++)
 	{
-		for (ligne = 0; ligne < n; ligne++)
+		for (lar = 0; lar < lon; lar++)
 		{
-			for (espace = 0; espace < ligne; espace++)
 			_putchar(' ');
-			_putchar('\\');
-
-			if (ligne == n - 1)
-				continue;
-			_putchar('\n');
 		}
+		_putchar(92);
+		if (lon < (n - 1))
+			_putchar('\n');
 	}
 	_putchar('\n');
 }
