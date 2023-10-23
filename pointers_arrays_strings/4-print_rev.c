@@ -16,3 +16,7 @@ int i = 0;
 	}
 	_putchar('\n');
 }
+// i = _strlen(s) - 1; : Initialise i à la longueur de la chaîne moins 1.
+// Cela place i à la dernière position de la chaîne.
+// i >= 0; : C'est la condition de la boucle. Tant que i
+// est supérieur ou égal à 0, la boucle continue à s'exécuter.
