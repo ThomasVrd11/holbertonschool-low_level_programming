@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
-* print_array - print un array avec des int
-* @a: un array de int
-* @n: le nombre d'élements a swap
+* reverse_array - bah reverse l'array quoi
+* @a: un array
+* @n: le nombre d'élements dans l'array
 *
 * Return: rien du tout, nada, niet
 */
