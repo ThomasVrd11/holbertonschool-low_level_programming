@@ -2,7 +2,7 @@
 
 /**
 * leet - encode un string a 1337
-* @str: string a encoder
+* @s: string a encoder
 * Return: le str
 */
 
