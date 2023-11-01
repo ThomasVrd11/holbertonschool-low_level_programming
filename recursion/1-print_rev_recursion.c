@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
-*
+* _print_rev_recursion - print la recursion a l'envers
+* @s: char
 */
 
 void _print_rev_recursion(char *s)
