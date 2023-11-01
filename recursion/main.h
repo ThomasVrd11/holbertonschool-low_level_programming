@@ -15,4 +15,4 @@ int _putchar(char c);
 
 int is_prime_number(int n);
 
-#endif // DEBUG
+#endif
