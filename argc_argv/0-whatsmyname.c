@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
-* main - print le nom du programme
-* Return: zero
-*/
+ * main - print the name of the program even if it's not slim shady
+ * @argc: argument count
+ * @argv: argument value
+ * Return: 0 (success)
+ */
 
 int main(int argc, char **argv) {
     if (argc > 0) {
