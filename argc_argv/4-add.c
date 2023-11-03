@@ -1,40 +1,41 @@
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
-
+#include <ctype.h>
 
 /**
- * main - fonction
- * @argc: variable
- * @argv: String
- * Return: 0
+ * main - add positive numbers
+ * @argc: argument count
+ * @argv: argument value
+ * Return: 0 (success) or 1 (error)
  */
-
 
 int main(int argc, char *argv[])
 {
-	int sum = 0;
-	int i, num;
+	int i, sum = 0, j = 0;
+	char *string;
 
+	if (argc == 1)
+	{
+		printf("0\n");
+		return (0);
+	}
 	for (i = 1; i < argc; i++)
 	{
-		num = atoi(argv[i]);
+		string = argv[i];
 
-		if (num == 0 && argv[i][0] != '0')
+		while (string[j] != 0)
 		{
-			printf("Error\n");
-		return (1);
-		}
+			if (string[j] < '0' || string[j] > '9')
+			{
+				printf("Error\n");
+				return (1);
 
-		if (num <= 0)
-		{
-			printf("Error\n");
-			return (1);
+			}
+			j++;
 		}
+		sum += atoi(argv[i]);
 
-		sum += num;
 	}
-
 	printf("%d\n", sum);
-
 	return (0);
 }
