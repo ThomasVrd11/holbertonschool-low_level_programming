@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 
 	resultat = n1 * n2;
 
-		printf("%d\n", result);
+		printf("%d\n", resultat);
 
 	return (0);
 }
