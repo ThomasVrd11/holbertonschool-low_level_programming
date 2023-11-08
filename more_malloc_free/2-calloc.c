@@ -2,7 +2,7 @@
 
 /**
  * _calloc - cacollac
- * @nmemb: int 
+ * @nmemb: int
  * @size: taille
  * Return: a pointer
  */
