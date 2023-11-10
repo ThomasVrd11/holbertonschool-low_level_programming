@@ -14,11 +14,16 @@ int *array_range(int min, int max)
 	int *arrayR;
 
 	if (min > max)
+	{
 		return (NULL);
-	entreDeux = max - min;
-	arrayR = malloc(sizeof(int) * (entreDeux + 1));
+	}
+	entreDeux = max - min + 1;
+	arrayR = calloc(sizeof(int) * (entreDeux));
+
 	if (arrayR == NULL)
+	{
 		return (NULL);
+	}
 
 	for (i = 0; min <  max; i++)
 	{
