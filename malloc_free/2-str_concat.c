@@ -23,8 +23,6 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1[0] == 0 || s2[0] == 0)
 	{
-		p = malloc(sizeof(char) * 1);
-		p[0] = '\0';
 		return ("");
 	}
 	p = malloc(sizeof(char) * (calin));
