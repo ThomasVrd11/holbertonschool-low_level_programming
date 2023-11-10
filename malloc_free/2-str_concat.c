@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		p = malloc(sizeof(char) * 1);
 		p[0] = '\0';
-		return (NULL);
+		return ("");
 	}
 	p = malloc(sizeof(char) * (calin));
 
