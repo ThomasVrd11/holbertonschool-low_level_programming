@@ -17,8 +17,8 @@ char *str_concat(char *s1, char *s2)
 	int calin;
 	char *p;
 
-	longueur1 = (int)strlen(s1);
-	longueur2 = (int)strlen(s2);
+	longueur1 = strlen(s1);
+	longueur2 = strlen(s2);
 	calin = longueur1 + longueur2;
 
 	if (s1[0] == 0 || s2[0] == 0)
