@@ -18,14 +18,14 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 	entreDeux = max - min + 1;
-	arrayR = calloc(sizeof(int) * (entreDeux));
+	arrayR = calloc(entreDeux, sizeof(i));
 
 	if (arrayR == NULL)
 	{
 		return (NULL);
 	}
 
-	for (i = 0; min <  max; i++)
+	for (i = 0; i <  entreDeux; i++)
 	{
 		arrayR[i] = min;
 		min++;
