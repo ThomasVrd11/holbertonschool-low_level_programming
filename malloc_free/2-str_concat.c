@@ -10,33 +10,29 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int ind;
-	int jnd;
-	int longueur1;
-	int longueur2;
-	int calin;
+	unsigned int ind;
+	unsigned int jnd;
 	char *p;
 
-	longueur1 = strlen(s1);
-	longueur2 = strlen(s2);
-	calin = longueur1 + longueur2;
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	if (s1[0] == 0 || s2[0] == 0)
-	{
-		return ("");
-	}
-	p = malloc(sizeof(char) * (calin));
+	p = (char *)malloc(strlen(s1) + strlen(s2) + 1);
 
 	if (p == NULL)
 		return (NULL);
 
-	for (ind = 0; ind < longueur1; ind++)
-		p[ind] = s1[ind];
-
-	for (jnd = 0; jnd < longueur2; jnd++)
+	for (ind = 0; ind < strlen(s1); ind++)
 	{
-		p[ind] = s2[jnd];
-		ind++;
+		p[ind] = s1[ind];
+	}
+	for (jnd = 0; jnd < strlen(s2); jnd++)
+	{
+		p[ind + jnd] = s2[jnd];
+			p[ind + jnd + 1] = '\0';
 	}
 	return (p);
+	free(p);
 }
