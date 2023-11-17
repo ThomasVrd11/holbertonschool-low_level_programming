@@ -2,9 +2,9 @@
 
 /**
  *int_index - ilo est ou le int ???,
- *@array: le paramaetre 
+ *@array: le paramaetre
  *@size: taille array
- *@cmp: pointeur 
+ *@cmp: pointeur
  *
  * Return: int
  */
