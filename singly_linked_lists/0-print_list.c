@@ -4,9 +4,9 @@
 #include <string.h>
 
 /**
- * print_list - Prints a linked list to the console.
+ * print_list - Prints a linked list to the console
  * @h: pointeur de list
- * Return: lennn
+ * Return: lennnn
  */
 size_t print_list(const list_t *h)
 {
