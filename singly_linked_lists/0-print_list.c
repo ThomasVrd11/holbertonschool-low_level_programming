@@ -8,25 +8,27 @@
  * @h: pointeur de list
  * Return: lennnn
  */
+
 size_t print_list(const list_t *h)
 {
-	unsigned int i = 0;
+	size_t r;
+	char *s;
 
-	while (h)
+	r = 0;
+	if (!h)
+		return (0);
+	r++;
+	while (1)
 	{
-		printf("[%u]", h->len);
-
-		if (h->str == NULL)
-		{
-			printf("(nil)\n");
-		}
-
+		s = h->str;
+		if (s)
+			printf("[%d] %s\n", h->len, s);
 		else
-		{
-			printf("(%s)\n", h->str);
-		}
+			printf("[0] (nil)\n");
 		h = h->next;
-		i++;
+		if (!h)
+			break;
+		r++;
 	}
-	return (i);
+	return (r);
 }
