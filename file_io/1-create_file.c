@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * creat_file - function qui cre un file
+ * create_file - function qui cre un file
  * @filename: nom
  * @text_content: text du fifichier
  * Return: 1
