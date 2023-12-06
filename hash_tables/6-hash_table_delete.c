@@ -2,7 +2,7 @@
 
 /**
  * hash_table_delete - supprime cette merde barre toi connasse
- * @ht: le hachis parmentier nn serieux j'en ai marre la 
+ * @ht: le hachis parmentier nn serieux j'en ai marre la
  * Return: vide
 */
 
