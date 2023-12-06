@@ -7,27 +7,27 @@
  * Return: write
  */
 
-ssize_t read_textfile(const char *filename, char *letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int filedef, rea, writ;
-	char *buff;
+	int fd, re, wr;
+	char *buf;
 
-	buff = malloc(letters * sizeof(char));
+	buf = malloc(letters * sizeof(char));
 
-	if (!buff)
+	if (!buf)
 	{
 		return (0);
 	}
 
-	filedef = open(filename, O_RDONLY);
-	rea = read(filedef, buff, letters);
-	writ = write(STDOUT_FILENO, buff, rea);
+	fd = open(filename, O_RDONLY);
+	re = read(fd, buf, letters);
+	wr = write(STDOUT_FILENO, buf, re);
 
-	if (filedef == -1 || rea == -1 || writ == -rea)
+	if (fd == -1 || re == -1 || wr != re)
 	{
-		free(buff);
+		free(buf);
 		return (0);
 	}
-	close(filedef);
-	return (writ);
+	close(fd);
+	return (wr);
 }
