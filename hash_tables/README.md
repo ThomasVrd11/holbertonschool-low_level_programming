@@ -1,1 +1,1 @@
-tables hachées parmentier bref plein le cul
+Hash tables 
