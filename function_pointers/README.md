@@ -24,3 +24,4 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - **Header File:** The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `function_pointers.h`.
 - **Include Guard:** Don’t forget to push your header file. All your header files should be include guarded.
 
+g
